@@ -1,0 +1,16 @@
+<script>
+  function map(array, callback) {
+    const newArr = [];
+
+    array.forEach((element) => {
+      newArr.push(callback(element));
+    });
+
+    return newArr;
+  }
+
+  const array = ["one", "two", "three"];
+
+  const mappedArray = map([1, 2, 3, 4, 5], (x) => x * 2);
+  console.log(mappedArray);
+</script>
