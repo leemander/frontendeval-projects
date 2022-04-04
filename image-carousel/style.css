@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  background-color: #ada;
+}
+
+.image {
+  align-items: center;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding-inline: 1em;
+  width: min(calc(100vw - 2em), 500px);
+  background-size: cover;
+  background-position: center;
+}
+
+.image__btn {
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  width: 40px;
+}
+
+.image__btn > i {
+  margin: auto;
+}
