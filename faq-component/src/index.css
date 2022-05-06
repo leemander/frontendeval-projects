@@ -1,0 +1,72 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: hsla(138, 100%, 83%, 0.667);
+  font-size: 1.1rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.faqs {
+  margin: 1em;
+  max-width: 350px;
+  min-height: 50vh;
+  padding: 1em;
+  width: 100%;
+}
+
+.faq > button {
+  align-items: center;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  font: inherit;
+  gap: 1rem;
+  padding: 0;
+  text-align: start;
+}
+
+button > *:not(h2) {
+  font-size: 1.2rem;
+}
+
+.faq__plus {
+  display: block;
+}
+
+.faq__minus {
+  display: none;
+}
+
+.faq__a {
+  display: none;
+}
+
+.faq.open .faq__plus {
+  display: none;
+}
+
+.faq.open .faq__minus {
+  display: block;
+}
+
+.faq.open .faq__a {
+  display: block;
+}
