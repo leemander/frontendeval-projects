@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding: 1em;
+  width: calc(100vw - 3em);
+}
+
+h1 {
+  display: block;
+  margin-inline: auto;
+  width: fit-content;
+}
+
+form {
+  display: grid;
+  gap: 1em;
+  margin-inline: auto;
+  padding: 1em;
+}
+
+form > label {
+  text-align: center;
+}
+
+input {
+  font: inherit;
+  padding-inline: 10px;
+}
+
+form > button {
+  display: block;
+  margin: auto;
+  letter-spacing: 1px;
+  padding: 0.5em;
+  text-transform: uppercase;
+}
+
+.dice {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(3, 1fr);
+  margin-inline: auto;
+  max-width: 700px;
+  width: 75%;
+}
+
+.dice > * {
+  margin: auto;
+}
+
+.die {
+  aspect-ratio: 1;
+  background-size: cover;
+  min-height: 100px;
+}
+
+.die[data-value="1"] {
+  background-image: url("./images/Alea_1.png");
+}
+
+.die[data-value="2"] {
+  background-image: url("./images/Alea_2.png");
+}
+
+.die[data-value="3"] {
+  background-image: url("./images/Alea_3.png");
+}
+
+.die[data-value="4"] {
+  background-image: url("./images/Alea_4.png");
+}
+
+.die[data-value="5"] {
+  background-image: url("./images/Alea_5.png");
+}
+
+.die[data-value="6"] {
+  background-image: url("./images/Alea_6.png");
+}
