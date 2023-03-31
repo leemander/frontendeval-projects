@@ -12,7 +12,7 @@
       <h1>Undoable Counter</h1>
       <div class="app__undo-redo-buttons">
         <button class="button" id="undo">Undo</button>
-        <button class="button" id="redo">Redo</button>
+        <button class="button" id="redo" disabled>Redo</button>
       </div>
       <div class="app__numbers">
         <button class="button button--modifier" data-value="-100">-100</button>
@@ -25,7 +25,9 @@
       </div>
       <div class="app__history">
         <h2>History</h2>
-        <ul id="history"></ul>
+        <ul id="history">
+          <li>0 (0 ⇨ 0)</li>
+        </ul>
       </div>
     </main>
     <script src="main.js"></script>

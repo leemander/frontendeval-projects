@@ -35,7 +35,11 @@ body {
   width: 60px;
 }
 
-.button:is(:hover, :focus-visible) {
+.button[disabled] {
+  opacity: 0.5;
+}
+
+.button:not([disabled]):is(:hover, :focus-visible) {
   transform: scale(1.1);
 }
 
@@ -65,6 +69,7 @@ body {
 
 .app__history {
   margin-top: 3em;
+  min-height: 25em;
 }
 
 .app__history > ul {
@@ -75,6 +80,8 @@ body {
   list-style: none;
   margin-inline: auto;
   margin-top: 2em;
+  max-height: 20em;
+  overflow-y: auto;
   padding-left: 0;
   padding: 1em;
   width: 33%;
